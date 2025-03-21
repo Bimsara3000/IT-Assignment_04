@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.css">
+
+    <style>
+
+        nav {
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        nav>div {
+            background-color: #62318c;
+            height: 50px;
+            width: 200px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+
+            position: relative;
+            left: -150px;
+
+            box-shadow: 0px 0px 5px 0px black;
+        }
+
+        nav>div:hover {
+            left: 0;
+            transition-duration: 1000ms;
+        }
+
+        nav>div>p {
+            font-weight: bold;
+            color: white;
+            font-size: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<nav>
+    <div><p>Menu One</p><i class="fa-solid fa-address-book fa-2xl" style="color: #ffffff;"></i></i></div>
+    <div><p>Menu Two</p><i class="fa-solid fa-truck-medical fa-2xl" style="color: #ffffff;"></i></div>
+    <div><p>Menu Three</p><i class="fa-solid fa-book-atlas fa-2xl" style="color: #ffffff;"></i></i></div>
+    <div><p>Menu Four</p><i class="fa-solid fa-layer-group fa-2xl" style="color: #ffffff;"></i></i></div>
+    <div><p>Menu Five</p><i class="fa-solid fa-cart-arrow-down fa-2xl" style="color: #ffffff;"></i></i></div>
+</nav>
+
+<script src="assets/lib/fontawesome/js/all.js"></script>
+</body>
+</html>
