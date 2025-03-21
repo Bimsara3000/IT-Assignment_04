@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 03</title>
+
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.css">
+
+    <style>
+
+        body {
+            overflow: hidden;
+        }
+
+        div {
+            width: 200px;
+            height: 100px;
+            border-radius: 20px;
+
+            animation-name: move_box;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
+        @keyframes move_box {
+            0%{
+                margin: 0;
+                transform: rotate(0deg);
+                background-color: blue;
+            }
+            25% {
+                margin-top: 0;
+                margin-left: calc(100vw - 200px);
+                transform: rotate(360deg);
+                background-color: yellow;
+            }
+            50% {
+                margin-top: calc(100vh - 100px);
+                margin-left: calc(100vw - 200px);
+                transform: rotate(0deg);
+                background-color: red;
+            }
+            75% {
+                margin-top: calc(100vh - 100px);
+                margin-left: 0;
+                transform: rotate(360deg);
+                background-color: deeppink;
+            }
+            100% {
+                margin: 0;
+                transform: rotate(0deg);
+                background-color: orangered;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div></div>
+
+<script src="assets/lib/fontawesome/js/all.js"></script>
+</body>
+</html>
