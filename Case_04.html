@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 04</title>
+
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.css">
+
+    <style>
+
+        div {
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            border: 2px solid darkred;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            animation-name: drop;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes drop {
+            from {
+                width: 0;
+            }
+            to {
+                width: 300px;
+                opacity: 0;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div></div>
+
+<script src="assets/lib/fontawesome/js/all.js"></script>
+</body>
+</html>
