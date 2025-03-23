@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 05</title>
+
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.css">
+
+    <style>
+
+        section {
+            width: 700px;
+            height: 400px;
+            border: 3px solid black;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            overflow: hidden;
+        }
+
+        section>div {
+            width: 2800px;
+            height: 400px;
+            display: flex;
+            transform: translateX(-2100px);
+
+            animation-name: slide;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
+        section>div>div {
+            width: 700px;
+            height: 400px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        section>div>div:nth-child(1) {
+            background-image: url("assets/images/slide1.jpeg");
+        }
+
+        section>div>div:nth-child(2) {
+            background-image: url("assets/images/slide2.jpeg");
+        }
+
+        section>div>div:nth-child(3) {
+            background-image: url("assets/images/slide3.jpeg");
+        }
+
+        section>div>div:nth-child(4) {
+            background-image: url("assets/images/slide4.jpeg");
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(-2100px);
+            }
+            20% {
+                transform: translateX(-2100px);
+            }
+            25% {
+                transform: translateX(-1400px);
+            }
+            45% {
+                transform: translateX(-1400px);
+            }
+            50% {
+                transform: translateX(-700px);
+            }
+            70% {
+                transform: translateX(-700px);
+            }
+            75% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
+<script src="assets/lib/fontawesome/js/all.js"></script>
+</body>
+</html>
